@@ -18,8 +18,22 @@ model usertable {
   Id                Int       @id@default(autoincrement())
   FirstName         String 
   LastName          String
-  UserName          String
+  UserName          String  
   Email             String
   Password          String
+  posts              post[]
+}
+
+model post{
+  Id                Int        @id@default(autoincrement())
+  Title             String 
+  synopisis         String
+  featureImage      String
+  contents          String
+  DateCreated       DateTime   @default(now())
+  LastUpdate        DateTime   @updatedAt
+  isDeleted         Boolean    @default(false)
+  author   usertable @relation(fields: [authorId], references: [Id])
+  authorId Int
 
 }
