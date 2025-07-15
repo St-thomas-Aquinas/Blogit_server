@@ -13,7 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateUser = exports.createUser = exports.getSingleUserpasscode = exports.getSingleUser = exports.getAllUsers = void 0;
-const client_1 = require("../../generated/prisma/client");
+const client_1 = require("@prisma/client");
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const userclient = new client_1.PrismaClient().usertable;
 //get all user

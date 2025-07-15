@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createPost = exports.getpostbyid = exports.getAllPost = void 0;
-const client_1 = require("../../generated/prisma/client");
+const client_1 = require("@prisma/client");
 const userclient = new client_1.PrismaClient().post;
 //get all user
 const getAllPost = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
