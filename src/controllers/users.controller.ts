@@ -1,5 +1,5 @@
 //import { PrismaClient } from "@prisma/client";
-import { PrismaClient } from "../../generated/prisma/client"
+import { PrismaClient } from "@prisma/client"
 import jwt from "jsonwebtoken";
 const userclient = new PrismaClient().usertable;
 
